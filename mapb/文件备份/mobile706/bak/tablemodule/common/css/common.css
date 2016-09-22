@@ -1,0 +1,11 @@
+html,body{margin: 0; padding: 0;/* width: 320px;*/ background-color: #F3F3F3;}
+#occupying{position:relative;width: 320px;height: 40px;z-index: -100;}
+#captionDiv{width: 100%; height: 42px;background-color: #448ED8;}
+#captionTitle{font-family: 'Arial'; font-size: 18px; color: #fff; line-height: 42px;margin-left: 40px;}
+
+
+#graphAndTable_table_caption{position: relative;width: 100%;text-align: center; height:28px; margin: 0px auto; background-color: #F3F3F3;}
+.graphAndTable_table_arrowLeft{position: absolute; vertical-align: middle;left: 0px;}
+.graphAndTable_table_arrowRight{position: absolute; vertical-align: middle; right: 0px;}
+#graphAndTable_table_caption span{position: relative; font-size: 12px; font-family: 'Arial';color: #F09932;}
+#graphAndTable_table_tbody{position: relative;text-align: center; margin: 10px; background-color: #F3F3F3;}

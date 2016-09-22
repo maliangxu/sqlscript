@@ -1,0 +1,190 @@
+.ros-search{
+	width:100%;
+	height:100%;
+	font-family: 'Microsoft Yahei';
+	display:none;
+}
+.ros-content{
+	position:absolute;
+	width:750px;
+	margin-left:-375px;
+	left:50%;
+	top:40px;
+	bottom:40px;
+}
+.ros-titlediv{
+	box-sizing: border-box;
+	-moz-box-sizing:  border-box;
+	position:relative;
+	width:100%;
+	height:45px;
+	line-height: 45px;
+	border-bottom: 1px solid #d8d6d8;
+}
+#ros-title,#ros-chzdtit{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height:100%;
+	float:left;
+	font-size: 15px;
+	width:140px;
+	text-align: center;
+	cursor: pointer;
+	/* border-bottom: 5px solid #F09932; */
+}
+#ros-title{
+	border-bottom: 5px solid #F09932;
+}
+
+/* 中部 */
+.ros-middle{
+	position:absolute;
+	width:100%;
+	left:0px;
+	top:45px;
+	bottom:50px;
+	overflow: auto;
+}
+
+.ros-filter{
+	width:100%;
+	/* height:400px; */
+	position: absolute;
+	top:0px;
+	bottom:0px;
+	overflow:auto;
+}
+#ros-chatj{
+	margin-left: 150px;
+	margin-top: 30px;	
+}
+#ros-filtertb{
+	margin-top: 15px;
+}
+#ros-filtertb tr{
+	height:40px;
+}
+.ros-selzd{
+	width:150px;
+	height:30px;
+	margin-right: 20px;
+}
+.ros-zf{
+	width:70px;
+	height:30px;
+	margin-right: 20px;
+	font-size: 13px;
+}
+.ros-zhi{
+	width:150px;
+	height:28px;
+	outline: none;
+	padding:0;
+}
+.ros-minus{
+	width:40px;
+	font:14px 'Microsoft Yahei';
+	cursor:pointer;
+	text-align: center;
+	/* background: center url(/mapb/tablemgr/common/imgs/sub_click.png) no-repeat; */
+}
+.ros-minus:hover{
+	color:#1e7ec7;
+}
+.ros-add{
+	width:40px;
+	font:14px 'Microsoft Yahei';
+	cursor:pointer;
+	text-align: center;
+	/* background: center url(/mapb/tablemgr/common/imgs/add_click.png) no-repeat; */
+}
+.ros-add:hover{
+	color:#1e7ec7;	
+}
+#ros-choosedzd{
+	width:90px;
+	height:40px;
+	position: absolute;
+	bottom:15px;
+	right:30px;
+	background: #E79028;
+	outline: none;
+	border-width:0px;
+	color:#fff;
+	font:15px 'Microsoft Yahei';
+	border-radius: 2px;
+}
+#ros-fadiv{
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:2;
+	background: #fff;
+	/* border: 1px solid #d8d6d8; */
+	display: none;
+}
+#ros-allfields{
+	position:absolute;
+	width:100%;
+	top:0;
+	bottom:0px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#ros-okzd{
+	background-position: 0px 0px;
+	color:#fff;
+} 
+
+#ros-allfields li{
+	float:left;
+	white-space: nowrap;
+	margin-left:10px;
+	font:14px/32px 'Microsoft Yahei';
+	width:170px;
+	height:32px;
+	text-align: left;
+	vertical-align: middle;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.ros-tjian{
+	width:55px;
+	height:30px;
+}
+
+
+/* 下部 */
+.ros-footbtn,.ros-footbtn2{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	position: absolute;
+	bottom:0px;
+	width:100%;
+	height:50px;
+	font-size: 16px;
+	border-top: 1px solid #d8d6d8;
+}
+.ros-footbtn2{
+	display:none;
+}
+.ros-confirm{
+	margin-top: 15px;
+	height:32px;
+	border-width:0;
+	width:92px;
+	float:right;
+	background: 0px -32px url(../../common/imgs/btn_large.png) no-repeat;
+	border-radius: 2px;
+	font-family: "Microsoft Yahei";
+	outline: none;
+	cursor:pointer;
+}
+#ros-clear,#ros-ok{
+	margin-right: 30px;
+}
+#ros-ok{
+	background-position: 0px 0px;
+	color:#fff;
+}

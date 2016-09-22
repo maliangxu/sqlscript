@@ -1,0 +1,5 @@
+get_db slprj
+
+select USERID,USERNAME,SEX,PASSWORD,EMAIL,TELEPHONE,VALIDITY,USERDESC,GROUPNAME from slprj_users
+
+put_db

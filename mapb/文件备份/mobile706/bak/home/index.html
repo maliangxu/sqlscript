@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="stylesheet" type="text/css" href="common/css/common.css">
+
+</head>
+
+<body>
+  <!-- 图片滑动 -->
+  <div id="navi"></div>
+
+  <!-- 导航栏 -->
+  <div id="mdlChoose">
+
+    <div id="mapMdl">
+      <ul id="mapMdlUl">
+        <li id="myMap">
+          <img src="common/imgs/mymap.png">
+          <span>我的地图</span>
+        </li>
+        <li id="shareMap">
+          <img src="common/imgs/sharemap.png">
+          <span>分享地图</span>
+        </li>
+        <li id="hotMap">
+          <img src="common/imgs/hotmap.png">
+          <span>热门地图</span>
+        </li>
+      </ul>
+    </div>
+
+    <div id="tableMdl">
+      <ul id="tableMdlUl">
+        <li id="myTable">
+          <img src="common/imgs/mytable.png">
+          <span>我的数据</span>
+        </li>
+        <li id="shareTable">
+          <img src="common/imgs/sharetable.png">
+          <span>分享数据</span>
+        </li>
+        <li id="hotTable">
+          <img src="common/imgs/hottable.png">
+          <span>热门数据</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- 不同专题显示 -->
+  <div id="specialShow"></div>
+
+  <script type="text/javascript" src="../../common/jslib/publib/jquery-1.9.1.min.js" ></script>
+  <script type="text/javascript" src="../common/jslib/publib/jquery.flexslider-min.js" ></script>
+  <script type="text/javascript" src="../../common/jslib/publib/sea.js" ></script>
+  <script type="text/javascript" src="../../common/js/util.js" ></script>
+
+  <script type="text/javascript">
+    $(document).ready(function (){
+      //加载子模块(html片段和css文件)
+      loadModules("navi","nav");
+      loadModules("specialShow","specialShow");
+    })
+
+    seajs.use("./common/js/common");
+  </script>
+
+</body>

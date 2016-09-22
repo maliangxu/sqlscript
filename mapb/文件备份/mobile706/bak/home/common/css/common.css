@@ -1,0 +1,15 @@
+body {margin: 0;padding: 0;position: absolute;width:100%;min-width: 320px; min-height: 100%; font-family: "Microsoft Yahei","SimSun",Arial;font-size: 13px;}
+#navi{position: relative; width: 100%;margin-bottom: 10px}
+#mdlChoose {position:relative;width: 100%;height: 226px;margin: 0 auto;  clear: both;}
+#mapMdl,#tableMdl {width: 95%; height: 113px;margin: 0 auto; text-align: center;}
+#mapMdl ul, #tableMdl ul {margin: 0; padding: 0;}
+#mapMdl li, #tableMdl li {
+	display: inline-block; width: 30%; height: 100% ; 
+	list-style: none; text-align: center;
+}
+#mapMdl li img, #tableMdl li img {position: relative; width:64px; height:64px; margin: 0 auto 3px; }
+#mapMdl li span, #tableMdl li span {
+	position: relative; display: block; z-index: 40; width: 100%;  overflow: hidden;
+	font-size: 13px;
+}
+#specialShow {background-color: #E4E4E4;width: 100%;height:auto;overflow: hidden;}

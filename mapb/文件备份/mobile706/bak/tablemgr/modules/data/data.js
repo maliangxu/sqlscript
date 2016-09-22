@@ -1,0 +1,30 @@
+
+$(document).ready(function(){
+	$('.myData_caption').click(function(){
+		window.open("../tablemodule/index.html",'_self');
+	});
+	$('#navList_my').click(function(){
+		$('#myData').css('display','block');
+		$('#navList_my').css('backgroundColor','#F09932');
+		$('#navList_my').css('color','#F3F3F3');
+		$('#shareData,#hotData').css('display','none');
+		$('#navList_share,#navList_hot').css('backgroundColor','#F3F3F3');
+		$('#navList_share,#navList_hot').css('color','#F09932');
+	});
+	$('#navList_share').click(function(){
+		$('#shareData').css('display','block');
+		$('#navList_share').css('backgroundColor','#F09932');
+		$('#navList_share').css('color','#F3F3F3');
+		$('#myData,#hotData').css('display','none');
+		$('#navList_my,#navList_hot').css('backgroundColor','#F3F3F3');
+		$('#navList_my,#navList_hot').css('color','#F09932');
+	});
+	$('#navList_hot').click(function(){
+		$('#hotData').css('display','block');
+		$('#navList_hot').css('backgroundColor','#F09932');
+		$('#navList_hot').css('color','#F3F3F3');
+		$('#myData,#shareData').css('display','none');
+		$('#navList_my,#navList_share').css('backgroundColor','#F3F3F3');
+		$('#navList_my,#navList_share').css('color','#F09932');
+	})
+})

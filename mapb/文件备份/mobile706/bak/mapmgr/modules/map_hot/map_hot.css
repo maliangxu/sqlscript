@@ -1,0 +1,24 @@
+#mapHotUl{margin:0;padding: 0; }
+#mapHotUl li{list-style:none;}
+
+.myDataChildDiv{position:relative; margin: 0 auto 7px;background-color: #fff;width: 88%;border-radius: 2px;padding: 12px; }
+.myData_caption{position:relative; border-left: 3px solid #F09932; padding-left: 7px; font-size: 14px; font-family: 'Microsoft Yahei';margin-bottom: 12px;line-height: 16px;}
+.myData_caption img{position: absolute; right: -2px;width: 16px;height: 16px;}
+.myData_img{position:relative; width:100%; height:100%; border:1px solid #E4E4E4;}
+.myData_img img{width: 98%;height: 98%; margin:1px auto;}
+.myData_imgComment{position: relative;font-size: 11px;font-family: 'Arial';color: #999999;}
+.myData_imgComment p{position: relative; margin: 10px auto;padding: 0px;}
+
+
+.myData_comment{position: relative; width: 100%; height: 20px; margin: 5px auto 0; border-radius: 3px;}
+.myData_commentList{margin: 0; padding: 0; text-align: center; line-height: }
+.myData_commentList li{position: relative; float: left; list-style: none; width: 33%; 
+				font-size: 12px; color:#6B6B6B;}
+.myData_commentList span{vertical-align: middle;margin-left: 3px;}
+.myData_commentList img{vertical-align: middle;width: 16px;height: 16px;}
+.myData_commentList_border{border-left: 1px solid #bbbbbb;border-right: 1px solid #bbbbbb;}
+
+
+
+
+

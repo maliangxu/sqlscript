@@ -1,0 +1,30 @@
+
+
+#opemmap_pop{display:none;position:absolute;left:0px;top:0px;width:100%;height:100%; background-color:#fff; font-family: "Microsoft Yahei"}
+
+#selMap{position:absolute;left:110px;top:20px;bottom:60px;right:100px;border-bottom: 1px solid #555;}
+#accessMap_title{position:relative;width:100%;height:30px;line-height: 28px;font-size: 16px;border-bottom: 1px solid #555;}
+#own_accessMapBtn,#other_accessMapBtn{float:left;margin-right: 8px;cursor: pointer}
+#own_accessMapBtn{position:relative;border-bottom: 4px solid #F09932}
+
+#accessMapList{position:absolute;width:100%;top:35px;bottom:0px;overflow: auto}
+#ownmap_div{display: block;width:100%;height:100%;}
+#othermap_div{display: none;width:100%;height:100%;}
+#ownmap_div ul,#othermap_div ul {display:block;list-style: none;padding: 0;margin: 0;} 
+#ownmap_div li,#othermap_div li{float:left;list-style: none;width:250px;height:120px;margin:0;}
+#ownmap_div li{margin-bottom: 40px}
+#othermap_div li{margin-bottom: 80px}
+#ownmap_div img,#othermap_div img{margin-right:50px;display: block;border:1px solid #EBEBEB;}
+#ownmap_div span,#othermap_div span{display: block;padding-left:50px;}
+#ownmap_div img:hover,#othermap_div img:hover{border:2px solid #F09932;} 
+
+.hoverImg{border:2px solid #F09932;}
+.clickedImg{border:2px solid #F09932;}
+
+#opemmap_btndiv{position:absolute;bottom:10px;height:40px;line-height:40px;width:100%;text-align: center;}
+/* #openmap_confrm,#openmap_cancel{width:92px;height:32px;background:url(../../common/imgs/btn_large.png) no-repeat;border-radius: 4px;border-style: none;font-family: 'Microsoft YaHei'}
+#openmap_confrm{background-position:-2px -2px;color:#fff; }
+#openmap_cancel{background-position:-2px -34px} */
+#openmap_confrm,#openmap_cancel{width:80px;height:35px;margin-left:35px;border-radius: 4px;border-style: none;font-family: 'Microsoft YaHei'}
+#openmap_confrm{background-color: #F09932;color:#fff;}
+#openmap_cancel{background-color: #FAFAFA;border:1px solid #C6C6C6;}

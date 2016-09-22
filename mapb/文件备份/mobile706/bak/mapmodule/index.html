@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="renderer" content="webkit"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="stylesheet" type="text/css" href="common/css/common.css">
+
+</head>
+
+<body>
+  <!-- 导航栏  -->
+  <div id="navi"></div>
+
+  <!-- 地图窗口 -->
+  <div id="main">
+             
+      <div id="mapView"></div>  
+
+      <span id="mapName">上海市行政区划图</span>
+      <div id="north">
+         <img src="common/imgs/north.jpg"/>
+      </div>
+      <div id="addMap" class="toolBtn">
+         <img src="common/imgs/addmap.png"/>
+      </div>
+      <div id="marker" class="toolBtn">
+         <img src="common/imgs/marker.png"/>
+      </div>
+      <div id="local" class="toolBtn">
+         <img src="common/imgs/local.png"/>
+      </div>
+      <div id="zoom">
+         <div id="zoomin">
+            <img src="common/imgs/zoomin.png"/>
+         </div>
+         <div id="zoomout">
+            <img src="common/imgs/zoomout.png"/>
+         </div>
+      </div>
+
+      <div id="cameraTrail">
+        <div id="arrow">
+          <img src="common/imgs/arrow.png"/>
+        </div>
+        <div id="localTool">
+          <div id="myLocation">
+            <span>我的位置</span>
+            <span id="location">华东师范大学（闵行校区）资环楼</span>
+          </div>
+          <div id="camera">
+            <img src="common/imgs/camera.png"/>
+            <span>拍照</span>
+          </div>
+          <div id="trail">
+            <img src="common/imgs/trail.png"/>
+            <span>记录轨迹</span>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+
+  <script src='../../common/jslib/gConfig.js'></script>
+  <script src='../../common/jslib/gClass.js'></script>
+  <script src='../../common/jslib/gUtil.js'></script>
+  <script src="../common/jslib/gControl.js"></script>
+  <script src="../../common/jslib/gMarker.js"></script>
+  <script src="../common/jslib/gLayer.js"></script>
+  <script src="../common/jslib/gMap.js"></script>
+  <script src="../../common/jslib/gGraph.js"></script>
+  <script src="../../common/jslib/gGeometry.js"></script>
+  <script src="../../common/jslib/gFeature.js"></script>
+  <script src='../../common/jslib/gWebSQL.js'></script>
+  <script src="../../common/jslib/gWebSQLScript.js"></script>
+  <script src="../../common/jslib/gWebFeatureGeojson.js"></script>
+  <script src="../../common/jslib/gDrawFeature.js"></script>
+  <script src="../../common/jslib/gEdit.js"></script>
+  <script src="../../common/jslib/gStyle.js"></script>
+  <script src="../../common/jslib/gExport.js"></script>
+  <script src="../../common/jslib/gUpload.js"></script>
+  <script src="../../common/jslib/gDynLayerStyle.js"></script>
+
+  <script type="text/javascript" src="../../common/jslib/publib/jquery-1.9.1.min.js" ></script>
+  <script type="text/javascript" src="../../common/jslib/publib/sea.js" ></script>
+  <script type="text/javascript" src="../../common/js/util.js" ></script>
+  <script type="text/javascript" src='common/js/openmap.js'></script>
+  <script type="text/javascript" src='common/js/mapview.js'></script>
+
+  <script type="text/javascript">
+    var USERID=sessionStorage.getItem('usrID'); 
+    $(document).ready(function (){
+      //加载子模块(html片段和css文件)
+      loadModules("navi","nav");
+
+    })
+
+    seajs.use("./common/js/common");
+  </script>
+
+</body>

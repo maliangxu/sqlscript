@@ -1,0 +1,10 @@
+get_db_update sysdb
+
+--¸üÐÂflagÖµ
+
+update sysdb_users
+set FLAG=:flag
+where TELEPHONE=:telephone or EMAIL=:email
+
+
+put_db_update

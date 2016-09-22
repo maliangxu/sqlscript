@@ -1,0 +1,83 @@
+.head-banner{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+#head-logo{
+	display: inline-block;
+	width:230px;
+	height:100%;
+	font-family: "Microsoft Yahei";
+	text-align: center;
+	cursor:default;
+}
+.head-title{
+	width:100%;
+	height:35px;
+	font-size: 20px;
+	line-height:40px;
+	color:#fff;
+}
+.head-mapinfo{
+	width:100%;
+	height:25px;
+	font-size: 14px;
+	line-height: 20px;
+	color:#F9E48C;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+#head-menuItem{
+	position:absolute;
+	top:0;
+	left:230px;
+	right:60px;
+	height:100%;	
+}
+#head-menuItem ul{
+	height:100%;
+	padding:0;
+	margin:0;
+	list-style: none;
+	font-size: 15px; 
+	color: #fff;
+	text-decoration: none;
+	font-family: "Microsoft Yahei";
+}
+#head-menuItem li{
+	width:120px;
+	height:100%;
+	float:left;
+	text-align:center;
+	line-height: 60px;
+	cursor:pointer;
+}
+.nav-hover {background: #2f76bd;}
+.nav-clicked {background: #2f76bd;}
+#user {
+	position:absolute;
+	right:0px;
+	color: #fff;
+	top:0;
+}
+#user span {
+	float: left; 
+	font:14px/60px 'Microsoft Yahei';
+
+}
+#head-loginout{
+	margin-left: 20px;
+	margin-right: 20px;
+	cursor:pointer;
+}
+#head-tishi{
+	margin-right: 10px;
+	cursor:default;
+}
+#head-loginout:hover{
+	color:#F9E48C;
+}
+#head-user{
+	cursor:default;
+}

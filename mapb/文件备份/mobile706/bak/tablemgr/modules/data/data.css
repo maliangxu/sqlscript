@@ -1,0 +1,27 @@
+#navDiv{position:relative; width: 94%;height: 25px; border:1px solid #F09932; margin: 10px auto 0;border-radius: 3px;
+		 background-color: #fff;}
+#navDiv ul{padding: 0; margin: 0 auto; line-height: 25px;text-align: center;}
+#navList li{position:relative;margin: 0px; padding: 0px;float:left; list-style: none; 
+	width:33.333%; font-size: 12px;box-sizing: border-box;}
+#navList li:hover{cursor: pointer;}
+#navList_share,#navList_hot{border-left: 1px solid #F09932; color: #F09932;}
+#navList_my{background-color: #F09932; color: #fff;}
+#myData{margin: 0px auto; height: auto;width: 95%; overflow:hidden;/* border: 1px solid;*/}
+.myDataChildDiv{position:relative; margin: 0 auto 7px;padding: 12px; background-color: #fff;
+		border-radius: 2px;/* border: 1px solid;*/}
+.myData_caption{position:relative; border-left: 3px solid #F09932; padding-left: 7px; font-size: 14px; 
+			margin-bottom: 12px;font-family: 'Microsoft Yahei'; line-height: 16px;}
+.myData_caption:hover{cursor: pointer;}
+.myData_caption_arrow{position: absolute; right: -2px; height: 16px; width: 16px;}
+.myData_img{position:relative; width:100%; height: 100%; border: 1px solid #E4E4E4;}
+.myData_img img{height: 98%;width: 98%;margin: 1px auto;}
+.myData_imgComment{position: relative;font-size: 11px;font-family: 'Arial';color: #999999;}
+.myData_imgComment p{position: relative; margin: 10px auto;padding: 0px;}
+.myData_comment{position: relative; width: 100%; height: 20px; margin: 5px auto; border-radius: 3px;}
+.myData_commentList{margin: 0; padding: 0; text-align: center; line-height: }
+.myData_commentList li{position: relative; float: left; list-style: none; width: 33%; 
+			font-size: 12px; }
+.myData_commentList li img{height: 16px; width: 16px;vertical-align: middle;}
+.myData_commentList span{vertical-align: middle;padding-left: 3px;}
+.myData_commentList_border{border-left: 1px solid #bbbbbb;border-right: 1px solid #bbbbbb;}
+hr{ height:1px;border:none;border-top:1px solid #CCCCCC;}

@@ -1,0 +1,84 @@
+
+
+#opemmap_pop{display:none;position:absolute;left:0px;top:0px;width:100%;height:100%; background-color:#fff; font-family: "Microsoft Yahei"}
+
+#selMap{
+	position:absolute;
+	left:110px;
+	top:20px;
+	bottom:60px;
+	right:100px;
+	border-bottom: 1px solid #d8d6d8;
+}
+#accessMap_title{
+	position:relative;
+	width:100%;
+	height:45px;
+	line-height: 45px;
+	font-size: 16px;
+	border-bottom: 1px solid #d8d6d8;
+}
+#own_accessMapBtn,#other_accessMapBtn{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height:100%;
+	float:left;
+	font-size: 15px/45px 'Microsoft YaHei';
+	width:140px;
+	text-align: center;
+	cursor: pointer;
+}
+#own_accessMapBtn{
+	border-bottom: 5px solid #F09932;
+}
+
+#accessMapList{
+	boxsizing:border-box;
+	position:absolute;
+	width:100%;
+	top:45px;
+	bottom:0px;
+	overflow: auto;
+	padding-top: 30px;
+}
+#ownmap_div{display: block;width:100%;height:100%;}
+#othermap_div{display: none;width:100%;height:100%;}
+#ownmap_div ul,#othermap_div ul {display:block;list-style: none;padding: 0;margin: 0;} 
+#ownmap_div li,#othermap_div li{float:left;list-style: none;width:250px;height:120px;margin:0;}
+#ownmap_div li{margin-bottom: 40px}
+#othermap_div li{margin-bottom: 80px}
+#ownmap_div img,#othermap_div img{margin-right:50px;display: block;border:1px solid #EBEBEB;}
+#ownmap_div span,#othermap_div span{display: block;padding-left:50px;}
+#ownmap_div img:hover,#othermap_div img:hover{border:2px solid #F09932;} 
+
+.hoverImg{border:2px solid #F09932;}
+.clickedImg{border:2px solid #F09932;}
+
+#opemmap_btndiv{
+	position:absolute;
+	left:110px;
+	right:100px;
+	bottom:10px;
+	height:40px;
+	line-height:40px;
+}
+/* #openmap_confrm,#openmap_cancel{width:92px;height:32px;background:url(../../common/imgs/btn_large.png) no-repeat;border-radius: 4px;border-style: none;font-family: 'Microsoft YaHei'}
+#openmap_confrm{background-position:-2px -2px;color:#fff; }
+#openmap_cancel{background-position:-2px -34px} */
+#openmap_confrm,#openmap_cancel{
+	width:92px;
+	height:32px;
+	border-radius: 2px;
+	border-style: none;
+	font-family: 'Microsoft YaHei';
+	float:right;
+}
+#openmap_confrm{
+	background:0 0 url(../../common/imgs/btn_large.png) no-repeat;
+	color:#fff;
+	margin-right: 30px;
+
+}
+#openmap_cancel{
+	background:0 -32px url(../../common/imgs/btn_large.png) no-repeat;
+}

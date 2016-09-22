@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit"/>
+ 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="stylesheet" type="text/css" href="common/css/common.css">
+</head>
+<body>
+
+ 	<div id="navi"></div>
+ 	<div id="occupying"></div>
+
+	<div id="navDiv">
+		<ul id="navList">
+			<li id="navList_my" liId="myMap"><span>我的地图</span></li>
+			<li id="navList_share" liId="shareMap"><span>分享地图</span></li>
+			<li id="navList_hot" liId="hotMap"><span>热门地图</span></li>
+		</ul>
+	</div><hr/>
+	
+	<div id="mapArea">
+		<div id="myMap"></div>
+		<div id="shareMap"></div>
+		<div id="hotMap"></div>
+	</div>
+	
+	<script type="text/javascript" src="../../common/jslib/publib/jquery-1.9.1.min.js" ></script>
+	<script type="text/javascript" src="../../common/jslib/publib/sea.js" ></script>
+	<script type="text/javascript" src="../../common/js/util.js" ></script>
+
+	<script type="text/javascript" src='../../common/jslib/gConfig.js'></script>
+	<script type="text/javascript" src='../../common/jslib/gClass.js'></script>
+	<script type="text/javascript" src="../../common/jslib/gWebSQLScript.js"></script>
+	<script type="text/javascript" src="../../common/jslib/gUtil.js"></script>
+
+	<script type="text/javascript">
+
+		sessionStorage.setItem("usrID", 'licui');
+    	$(document).ready(function (){
+    	   //加载子模块(html片段和css文件)
+    	   loadModules("navi","nav");
+    	   loadModules("myMap","map_my");
+    	   loadModules("hotMap","map_hot");
+	
+    	})
+    	
+		window.onload = function (){
+		}
+		seajs.use("./common/js/common");
+	</script>
+</body>
+</html>

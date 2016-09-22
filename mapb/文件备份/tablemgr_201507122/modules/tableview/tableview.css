@@ -1,0 +1,746 @@
+.rtv-tbdataout,.rtv-tbfieldsout,.rtv-newtable,.rtv-importtable,.rtv-share,.rtv-chart,.rtv-chartshow,.rtv-mtrelate,.rtv-upnewtab,.rtv-addexsittb,.rtv-sqltbdataout,.rtv-saveas{
+	position:absolute;
+	width:100%;
+	height:100%;
+	overflow: auto;
+	font-family: "Microsoft YaHei";
+	font-size: 13px;
+	display:none;
+}
+
+.rtv-tbdata,.rtv-sqltbdata,.rtv-tbfieldsinner{
+	box-sizing:border-box;
+	position:absolute;
+	width:100%;
+	top:0;
+	bottom:0px;
+	overflow: hidden;
+	padding-left: 10px;
+	padding-top: 10px;
+	/* padding-right: 10px; */
+}
+.rtv-tbfields{
+	position:relative;
+	width:100%;
+}
+.rtv-tbfields:after{
+	display: block;
+	content:'';
+	clear:both;
+	zoom:1;
+}
+/* #rtvtf-btndiv{
+	position:absolute;
+	width:100%;
+	height:40px;
+	bottom:0px;
+	background: #F5F5F5;
+} */
+
+.rtvte-btn,.rtvtf-btn{
+	width:100px;
+	height:100%;
+	outline: none;
+	background: #F5F5F5;
+	padding:0;
+	margin:0;
+	border:0;
+	font-size: 14px;
+	font-family: 'Microsoft Yahei';
+	cursor: pointer;
+}
+.row_selected{
+	background-color:#eeeeee;
+}
+#rtvt-data,#rtvt-sqldata{
+	width: 100%; 
+	font-family: "Microsoft YaHei" !important;
+	color: #333; 
+	font-size: 13px;
+	border-width: 0px;
+/* 	margin-right: 5px;
+margin-left:5px; */
+}
+#rtvt-data th{
+	background-color: #c7e2fd;
+	cursor: default;
+	border:solid #90cafb;
+	border-width:1px 1px 1px 0;
+	height: 23px;
+	padding: 1px 2px;
+}
+#rtvt-sqldata th{
+	background-color: #c7e2fd;
+	cursor: default;
+	border:solid #90cafb;
+	border-width:1px 1px 1px 0;
+	height: 23px;
+	padding: 1px 2px;
+}
+#rtvt-data th:first-child{
+	border-left: 1px solid #90cafb;
+}
+#rtvt-sqldata th:first-child{
+	border-left: 1px solid #90cafb;
+}
+#rtvt-data td{
+	border:#90cafb solid;
+	border-width:0 1px 1px 0;
+	padding-left: 10px;
+	padding: 3px 2px;
+}
+#rtvt-sqldata td{
+	border:#90cafb solid;
+	border-width:0 1px 1px 0;
+	padding-left: 10px;
+	padding: 3px 2px;
+}
+#rtvt-data td:first-child{
+	border-left: 1px solid #90cafb;
+	cursor: default;
+}
+#rtvt-sqldata td:first-child{
+	border-left: 1px solid #90cafb;
+	cursor: default;
+}
+/* #rtvt-data_wrapper{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+#rtvt-sqldata_wrapper{
+	margin-top: 10px;
+	margin-left: 10px;
+} */
+#rtvt-data_filter,#rtvt-data_length,#rtvt-sqldata_length{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#rtvt-data_paginate,#rtvt-data_filter,#rtvt-sqldata_paginate{
+	float:left;
+	margin-left: 122px;
+}
+
+/****************************设计表*******************************/
+#recTable_design{
+	float:left;
+	width: 400px; 
+	font-family: "Microsoft YaHei" !important;
+	color: #333; 
+	font-size: 13px;
+	border:#90cafb solid;
+	border-width:1px 0 0 1px;
+	margin-top:10px;
+	margin-left:10px;
+}
+#recTable_design th{
+	box-sizing:border-box;
+	background-color: #c7e2fd;
+	cursor: default ;
+	border:#90cafb solid;
+	border-width:0 1px 1px 0;
+	height: 25px;
+	padding: 1px 2px;
+}
+#recTable_design td{
+	border:#90cafb solid;
+	border-width:0 1px 1px 0;
+	padding-left: 10px;
+	padding: 3px 2px;
+}
+#recTable_design td:first-child{
+	/* border-left:1px #90cafb solid; */
+	cursor: default;
+}
+/***************新建表格**************************/
+.rtv-newtable{
+	display:none;
+}
+.rtv-content{
+	position:absolute;
+	width:720px;
+	margin-left:-360px;
+	left:50%;
+	top:20px;
+	bottom:20px;
+}
+.rtv-titlediv{
+	box-sizing: border-box;
+	-moz-box-sizing:  border-box;
+	position:relative;
+	width:100%;
+	height:45px;
+	line-height: 45px;
+	border-bottom: 1px solid #d8d6d8;
+	font-family: 'Microsoft Yahei'
+}
+.rtv-titlebtn{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height:100%;
+	float:left;
+	font-size: 15px;
+	width:140px;
+	text-align: center;
+	cursor: pointer;
+}
+#rtv-improtdata,#rtvs-sharetitle,#rtvc-charttitle,#rtv-mydb,#rtvc-lyrtitle,#rtv-upnewtb,#rtvadd-mytb,#rtvadd-sveasmytit{
+	border-bottom: 5px solid #F09932;	
+}
+.rtv-mid{
+	position:absolute;
+	width:100%;
+	top:45px;
+	bottom:0px;
+	font-family: 'Microsoft Yahei';
+}
+.rtv-middiv{
+	position:absolute;
+	width:700px;
+	left:0px;
+	top:0px;
+	bottom:50px;
+	overflow: auto;
+}
+.rtvi-inputname,.rtvi-selectdb,.rtvi-inputfile,.rtv-inputfile,.rtvm-inputname,.rtvm-selectdb,.rtvm-sharegroup,.rtv-newtbname,.rtv-saveasnewtb{
+	position:relative;
+	margin-left: 1%;
+	margin-top:40px;
+	width:600px;
+	height:40px;
+	margin-bottom: 50px;
+	font:15px/40px 'Microsoft YaHei';
+}
+.rtv-selectdb{
+	position:relative;
+	margin-left: 1%;
+	margin-top:25px;
+	width:500px;
+	height:40px;
+	margin-bottom: 30px
+}
+
+.rtvm-zyqx,.rtvm-desc{
+	position:relative;
+	left:1%;
+	margin-left: -250px;
+	margin-top:50px;
+	width:500px;
+}
+/* .rtvm-zyqx{
+	height:60px;
+} */
+.rtvm-zyqx:after{
+	content:'';
+	display:table;
+	clear:both;
+}
+.rtvm-desc{
+	height:60px;
+}
+
+#rtv_inptitle2,#rtvi_inptitle,#rtvm_inptitle,#rtvm-grouptitle,.rtvsaveas-title{
+	float:left;
+	width:110px;
+	height:100%;
+	line-height: 40px;
+	font-size: 15px;
+}
+#rtvi_inptitle2{
+	float:left;
+	width:96px;
+	height:100%;
+	font-size: 15px/40px;
+}
+#rtvnew-title{
+	float:left;
+	width:96px;
+	height:100%;
+	font-size: 15px/40px;
+}
+#rtvm-qxtitle,#rtvm-desctitle{
+	float:left;
+	width:120px;
+	height:100%;
+	font-size: 15px;
+}
+/* #rtvm-qxtitle{
+	line-height: 60px;
+} */
+#rtvm-desctitle{
+	line-height:60px;
+}
+#rtvm-desctext{
+	float:left;
+	width:370px;
+	height:100%;
+	resize:none;
+	outline: none;
+}
+#rtvm-tbfrom{
+	float:left;
+	width:100px;
+	height:100%;
+	line-height: 40px;
+	font-size: 15px;
+	font-family: 'Microsoft Yahei';
+}
+#rtv_name,#rtvi_dblist,#rtvi_name,#rtvm_dblist,#rtvm_name,#rtvm-groupname,#rtvnew-tbnamept,#rtvsave-tbnamept{
+	box-sizing:border-box;
+	width:380px;
+	height:100%;
+	outline: none;
+	border:1px solid #d5d9dd;
+	border-radius: 2px;
+	font-family: "Microsoft Yahei";
+	font-size: 15px;
+	float:left;
+}
+
+#rtvm-qxlist{
+	float:left;
+	width:380px;
+	height:100%;
+	list-style: none;
+	margin:0;
+	padding:0;
+	font-size: 14px;
+}
+#rtvm-qxlist li{
+	margin-bottom: 10px;
+}
+#rtvm-qxlist input{
+	margin-right: 10px;
+}
+#rtvm_name{
+	margin-left: 20px;
+}
+.rtv-ocbtn{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	position: absolute;
+	bottom:0px;
+	width:100%;
+	height:50px;
+	font-size: 16px;
+	border-top: 1px solid #d8d6d8;
+}
+.rtv-confirm{
+	margin-top: 15px;
+	height:32px;
+	border-width:0;
+	width:92px;
+	float:right;
+	/* background: #DEDEDE; */
+	background: 0px -32px url(../../common/imgs/btn_large.png) no-repeat;
+	border-radius: 2px;
+	font-family: "Microsoft Yahei";
+	outline: none;
+	cursor:pointer;
+}
+#rtv-ok,#rtv-ok1,#rtv-ok2,#rtv-okshare,#rtv-nextchart,#rtv-okchart,#rtv-okrelate,#rtv-okup,#rtv-okaddmy,#rtv-oksaveas{
+	/* background: #E79028; */
+	background-position: 0px 0px;
+	color:#fff;
+	margin-right: 30px;
+}
+#rtv-prechart{
+	margin-right: 30px;
+}
+
+/***************导入数据*********************/
+#rtvi-filepath,#rtv-filepath{
+	box-sizing:border-box;
+	width:360px;
+	height:100%;
+	float:left;
+	padding:0;
+	font: 15px 'Microsoft Yahei';
+}
+#rtv-uploadnewfile{
+	float:left;
+	margin-right: 10px;
+}
+#rtvi-uploadfile{
+	float:left;
+	margin-right: 10px;
+}
+#rtvi-filebtn,#rtv-filebtn{
+	position:absolute;
+	width:120px;
+	height:100%;
+	opacity: 0;
+	right:0;
+}
+#rtvi-liulan,#rtv-liulan{
+	float:left;
+	width:120px;
+	height:100%;
+	outline: none;
+	margin-left:20px;
+	padding:0;
+}
+#rtv-addtbmid{
+	display:none;
+}
+
+#rtvm-grouplist{
+	display:none;
+	position:absolute;
+	z-index: 1;
+	width:380px;
+	left:120px;
+	top:40px;
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+.rtvm-groupli{
+	box-sizing:border-box;
+	width:100%;
+	height:30px;
+	line-height: 30px;
+	font-size: 14px;
+	border-style: solid;
+	border-color: #d5d9dd;
+	border-width: 0 1px 1px 1px;
+	background: #fff;
+}
+.row_selected{
+	background: #93D7FB;
+}
+
+.rtvc-content{
+	position:absolute;
+	top:10px;
+	bottom:0px;
+	right:0px;
+	left:10px;
+	border:1px solid red;
+}
+/********图表*********/
+#rtvm-chart2{
+	display:none;
+}
+.rtvmi-config{
+	position:absolute;
+	width:100%;
+	height:100%;
+	font-size: 15px;
+}
+#rtvmc-1{
+	width:100%;
+	height:40px;
+	line-height: 40px;
+	margin-top: 25px;
+}
+#rtvmc-1 span{
+	margin-left: 1%;
+}
+#rtvmc-select_name{
+	width:300px;
+	height:100%;
+	margin-left:40px;
+	font-size: 15px;
+	font-family: 'Microsoft YaHei';
+	padding: 0;
+}
+.rtvmc-tit{
+	display:block;
+	margin-top: 20px;
+	margin-left: 1%;
+}
+#rtvmc-ul{
+	/* position:absolute; */
+	border-top:1px solid #d8d6d8;
+	width:98%;
+	/* height:150px; */
+	margin:10px 0 20px 1%;
+	padding:0;
+	/* top:90px;
+	bottom:70px; */
+	overflow: auto;
+}
+#rtvmc-ul:after{
+	content:'';
+	display: block;
+	clear:both;
+}
+.rtvmc-xbztit{
+	display:block;
+	margin-left: 1%;
+	/* position:absolute; */
+	bottom:50px;
+}
+#rtvmc-xbz{
+	/* position:absolute; */
+	border-top:1px solid #d8d6d8;
+	margin: 0 0 0 1%;
+	padding:0;
+	width:98%;
+	/* height:40px; */
+	/* bottom:0px; */
+}
+#rtvmc-xbz:after{
+	content:'';
+	display: block;
+	clear:both;
+}
+#rtvmc-ul li{
+	float:left;
+	white-space: nowrap;
+	margin-left:10px;
+	font:13px/30px '宋体';
+	width:120px;
+	height:30px;
+	text-align: left;
+	vertical-align: middle;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+#rtvmc-xbz li{
+	float:left;
+	white-space: nowrap;
+	margin-left:10px;
+	font:13px/30px '宋体';
+	width:120px;
+	height:30px;
+	text-align: left;
+	vertical-align: middle;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+#rtvc-chartmingzi,#rtvmc-chartybiaoti{
+	width:100%;
+	height:40px;
+	margin-top: 5px;
+}
+
+#rtvcs-inner{
+	position:absolute;
+	left:10px;
+	top:40px;
+	bottom:0;
+	right:0;
+}
+#rtv-closechart{
+	position:absolute;
+	width:28px;
+	height:28px;
+	right:10px;
+	top:10px;
+	background:#1e7ec7 -24px -168px url(../../common/imgs/table_editor.png) no-repeat;
+	cursor:pointer;
+	border-radius: 15px;
+}
+#rtv-closechart:hover{
+	background-color: #3a8ecf;
+}
+/******关联表格与地图数据*********/
+.rtv-relatediv,.rtv-rtmd{
+	float:left;
+	height:350px;
+	border:1px solid red;
+	margin-top:50px;
+	font:15px 'Microsoft YaHei';
+}
+.rtv-relatediv span{
+	float:left;
+}
+.rtv-relatediv select{
+	box-sizing:border-box;
+	float:left;
+	width:100%;
+	height:40px;
+	outline:none;
+	padding:0;
+	margin-top:15px;
+	font: 15px 'Microsoft Yahei';
+}
+.rtv-relatediv input{
+	box-sizing:border-box;
+	float:left;
+	width:100%;
+	height:40px;
+	outline:none;
+	padding:0;
+	margin-top:15px;
+}
+.tb2lyr{
+	width:250px;
+	margin-left:65px;
+}
+.lyr2tb{
+	width:250px;
+	margin-left:10px;
+}
+.rtv-rtmd{
+	width:50px;
+	margin-left: 10px
+}
+.rtv-trlspan{
+	margin-top: 20px;
+}
+.rtv-lrlspan{
+	margin-top: 20px;
+}
+
+
+#addFldBtn{
+	margin-left:420px;
+	width:80px;
+	height:35px;
+	border-radius: 4px;
+	border-style: none;
+	font-family: 'Microsoft YaHei';
+	background-color: #F09932;
+	color:#fff;
+}
+#addFlds_pop{
+	margin-left: 1%;
+	width:98%;
+	/* height:390px; */
+	background-color: #fff;
+	border-top:1px solid #d8d6d8 ;
+	margin-top: 10px;
+}
+#addFlds_pop:after{
+	content:'';
+	display:none;
+	display:block;
+}
+#creat_addfldDiv{
+	margin-left:5px;
+	margin-top:15px;
+	font-size: 14px;
+}
+#creat_addfldDiv:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+#create_addfldname,#creat_selfldtype,#create_slflddw{
+	float:left;
+	display: inline-block;
+	text-align: center;
+}
+#creat_selfldtype,#create_slflddw{
+	margin-left: 20px;
+}
+#creat_selfldtype,#create_slflddw{
+	/* margin-left: 10px; */
+}
+#ftset_fldname,#ftset_fldtype,#ftset_fldunit{
+	/* margin-left:10px; */
+	margin-top:5px;	
+	width:160px;
+}
+
+#ftset_fldname,#ftset_fldunit{
+	height:24px;
+	padding:0;
+	outline: none;
+}
+#ftset_fldtype{
+	height:28px;
+	width:150px;
+}
+/* #creat_selfldtype,#create_slflddw{
+	margin-top:8px;
+	display: inline-block;
+}
+#create_slflddw input{
+	height:21px;
+} */
+#ftset_addFldBtn{
+	width:80px;
+	height:30px;
+	margin-top:23px; 
+	margin-left: 20px;
+	border-radius: 2px;
+	border-style: none;
+	font-family: 'Microsoft YaHei';
+	background-color: #F09932;
+	color:#fff;
+	float:left;
+}
+#creatFtset_addedFlds{
+	float:left;
+	margin-top:20px;
+	border:1px solid #d8d6d8;
+	width:620px;
+	/* height:180px; */
+	min-height: 120px;
+	/* overflow:auto; */
+	/* margin-left: 2px; */
+	margin-left: 2px;
+	margin-bottom: 20px;
+}
+#rtv-addnewxiduan{
+	margin-left: 1%;
+	font-size: 15px;
+}
+#addFld_btnDiv{
+	margin-top:10px;
+	text-align: center;
+}
+#addFlds_confrm,#addFlds_cancel{
+	width:80px;
+	height:30px;
+	border-radius: 4px;
+	border-style: none;
+	font-family: 'Microsoft YaHei';
+	margin-right: 20px
+}
+#addfld_msg{
+	color:red;
+}
+#addfieldTab{
+	width:100%;
+	text-align: center;
+}
+#fldnameTd{width:130px}
+#fldtypeTd{width:130px}
+#fldunitTd{width:130px;}
+#fldeditImgTd{width:90px}
+.editFieldclass{cursor:pointer;}
+
+#rtv-xjzid{
+	float:right;
+	margin-right:20px;
+	margin-top: 10px; 
+	width:80px;
+	height:40px;
+}
+#rtvadd-mytbssel{
+	width:180px;
+	height:280px;
+	margin-top: 50px;
+	margin-left:100px; 
+	float:left;
+}
+
+.rtvadd-btndiv{
+	width:80px;
+	height:280px;
+	margin-top: 50px;
+	margin-left: 40px;
+	float:left;
+}
+#rtvadd-myseledtb{
+	width:180px;
+	height:280px;
+	margin-top: 50px;
+	margin-left: 40px;
+	float:left;
+}
+
+#rtvadd-right{
+	width:100%;
+	height:35px;
+	margin-top: 60px;
+}
+#rtvadd-left{
+	width:100%;
+	height:35px;
+	margin-top: 50px;
+}

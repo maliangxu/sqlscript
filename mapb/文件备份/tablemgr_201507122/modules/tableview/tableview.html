@@ -1,0 +1,317 @@
+<div class="rtv-tbdataout">
+	<div class="rtv-tbdata">
+		<table id="rtvt-data">
+			<thead id="rtvt-tbhead"></thead>
+		</table>
+	</div>
+	<!-- <div id="rtvt-editbtn">
+		<input type="button" value="添加" class="rtvte-btn">
+		<input type="button" value="删除" class="rtvte-btn">
+		<input type="button" value="保存" class="rtvte-btn">
+	</div> -->
+</div>
+<div class="rtv-sqltbdataout">
+	<div class="rtv-sqltbdata">
+		<table id="rtvt-sqldata">
+			<thead id="rtvt-sqltbhead"></thead>
+		</table>
+	</div>
+	<!-- <div id="rtvt-editbtn">
+		<input type="button" value="添加" class="rtvte-btn">
+		<input type="button" value="删除" class="rtvte-btn">
+		<input type="button" value="保存" class="rtvte-btn">
+	</div> -->
+</div>
+<div class="rtv-tbfieldsout">
+	<div class="rtv-tbfieldsinner">
+		<div class="rtv-tbfields">
+			<table id="recTable_design" cellspacing="0" cellpadding="0">
+		     	<thead id="recThead_design"></thead>
+		     	<tbody id="recTbody_design"></tbody>
+	    	</table>
+		</div>
+	</div>
+   <!-- <div id="rtvtf-btndiv">
+   	<input type="button" value="添加" class="rtvtf-btn">
+   		<input type="button" value="删除" class="rtvtf-btn">
+   		<input type="button" value="保存" class="rtvtf-btn">
+   </div> -->
+</div>
+<div class="rtv-newtable">
+	<div class="rtv-content">
+		<div class="rtv-titlediv">
+			<div id="rtv-mydb" class="rtv-titlebtn">新建表格</div>
+		</div>
+		<div class="rtv-mid">
+			<div class="rtv-middiv" id="rtv-middiv">
+				<!-- <div class="rtv-inputname">
+					<div id="rtv_inptitle">要插入的表空间</div>
+					<input type="text" id="rtv_dblist">				
+				</div> -->
+				<div class="rtv-selectdb">
+					<div id="rtv_inptitle2">表格名称:</div>
+					<input type="text" id="rtv_name" value='我的表格'>
+				</div>
+				<span id="rtv-addnewxiduan">添加字段:</span>
+				<div id="addFlds_pop">
+					<div id='creat_addfldDiv'>
+					<div id="create_addfldname"><label for="">字段名</label><br><input type="text" id="ftset_fldname"><!-- <span id="addfld_msg"></span> --></div>
+					<div id='creat_selfldtype'><label for="">字段类型</label><br>
+						<select  id='ftset_fldtype'>
+						<option value="test">text</option>
+						<option value="int">int</option>
+						<option value="float">float</option>
+						<option value="blob">blob</option></select>
+						
+					</div>
+					<div id="create_slflddw"><label for="">单&nbsp;&nbsp;&nbsp;位</label><br><input type="text" id="ftset_fldunit"><br></div>
+					<input type="button" id="ftset_addFldBtn" value='添加'>
+					</div>
+					<div id="creatFtset_addedFlds">
+					<table id="addfieldTab" cellspacing='0' cellpadding="0">
+					<thead><tr>
+			          <th id='fldnameTd'>字段名</th>
+			          <th id='fldtypeTd'>字段类型</th>
+			          <th id='fldunitTd'>单&nbsp;&nbsp;&nbsp;位</th>
+			          <th id='fldeditImgTd'>编辑</th>
+			        </tr></thead><tbody id='addfieldTbody'></tbody></table></div>
+					<!-- <div id="addFld_btnDiv">
+						<input type="button" id='addFlds_confrm' value='确定'>
+						<input type="button" id='addFlds_cancel' value='取消'>
+					</div> -->
+				</div>
+				<!-- <input type="button" value="添加字段" id="rtv-xjzid"> -->
+				<!-- <div class="rtv-inputfile">
+					<input type="text" id="rtv-filepath" placeholder="请上传要导入的表">
+					<input type="file" id="rtv-filebtn" onchange="document.getElementById('rtv-filepath').value=this.value;" multiple="multiple">
+					<input type="button" id="rtv-liulan" value="浏览">
+				</div> -->
+			</div>
+			<div class="rtv-ocbtn">
+				<input type="button" id="rtv-cancel" value="取消" class="rtv-confirm">
+				<input type="button" id="rtv-ok" value="确定" class="rtv-confirm">
+			</div>
+		</div>
+		
+	</div>
+</div>
+<div class="rtv-importtable">
+	<div class="rtv-content">
+		<div class="rtv-titlediv">
+			<div id="rtv-improtdata" class="rtv-titlebtn">追加数据</div>
+			<!-- <div id="rtv-addtb2db" class="rtv-titlebtn">添加现有表格</div> -->
+		</div>
+		<div class="rtv-mid" id="rtvimportmid">
+			<div class="rtv-middiv" id="rtv-middiv">
+				<!-- <div class="rtvi-inputname">
+					<div id="rtvi_inptitle">表空间名</div>
+					<input id="rtvi_dblist">		
+				</div> -->
+				<div class="rtvi-selectdb">
+					<div id="rtvi_inptitle2">表格名:</div>
+					<select id="rtvi_name"></select>
+				</div>
+				<div class="rtvi-inputfile">
+					<span id="rtvi-uploadfile">上传csv表格:</span>
+					<input type="text" id="rtvi-filepath" placeholder="请上传要导入的CSV表">
+					<input type="file" id="rtvi-filebtn" onchange="document.getElementById('rtvi-filepath').value=this.value;" multiple="multiple">
+					<input type="button" id="rtvi-liulan" value="浏览">
+				</div>
+			</div>
+			<div class="rtv-ocbtn">
+				<input type="button" id="rtv-cancel1" value="取消" class="rtv-confirm">
+				<input type="button" id="rtv-ok1" value="保存" class="rtv-confirm">
+			</div>
+		</div>
+		<!-- <div class="rtv-mid" id="rtv-addtbmid">
+			<div class="rtv-middiv">
+				<div class="rtvm-inputname">
+					<div id="rtvm_inptitle">导入的表空间名</div>
+					<input id="rtvm_dblist">		
+				</div>
+				<div class="rtvm-selectdb">
+					<select id="rtvm-tbfrom">
+						<option value="me">我的表格</option>
+						<option value="group">组内分享表格</option>
+						<option value="public">公众分享表格</option>
+					</select>
+					<select id="rtvm_name"></select>
+				</div>
+			</div>
+			<div class="rtv-ocbtn">
+				<input type="button" id="rtv-cancel2" value="取消" class="rtv-confirm">
+				<input type="button" id="rtv-ok2" value="导入" class="rtv-confirm">
+			</div>
+		</div> -->
+	</div>
+</div>
+<div class="rtv-share">
+	<div class="rtv-content">
+		<div class="rtv-titlediv">
+			<div id="rtvs-sharetitle" class="rtv-titlebtn">分享</div>
+		</div>
+		<div class="rtv-mid">
+			<div class="rtv-middiv">
+				<div class="rtvm-sharegroup">
+					<div id="rtvm-grouptitle">分享到</div>
+					<input type="text" id="rtvm-groupname">
+					<ul id="rtvm-grouplist"></ul>			
+				</div>
+				<div class="rtvm-zyqx">
+					<div id="rtvm-qxtitle">资源权限</div>
+					<ul id="rtvm-qxlist">
+						<li><input type="radio" data-mod='read' id="rtvm-radio1" name="rtvm-radio"><label for="rtvm-radio1">只读分享：只允许查看</label></li>
+						<li><input type="radio" data-mod='copy' id="rtvm-radio2" name="rtvm-radio"><label for="rtvm-radio2">复制分享：数据拷贝</label></li>
+						<li><input type="radio" data-mod='common' id="rtvm-radio3" name="rtvm-radio"><label for="rtvm-radio3">协同工作：组内共同完成工作</label></li>
+					</ul>
+				</div>
+				<div class="rtvm-desc">
+					<div id="rtvm-desctitle">资源描述</div>
+					<textarea id="rtvm-desctext"></textarea>
+				</div>
+			</div>
+			<div class="rtv-ocbtn">
+				<input type="button" id="rtv-cancelshare" value="取消" class="rtv-confirm">
+				<input type="button" id="rtv-okshare" value="保存" class="rtv-confirm">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="rtv-chart">
+	<div class="rtv-content">
+		<div class="rtv-titlediv">
+			<div id="rtvc-charttitle" class="rtv-titlebtn">图表</div>
+		</div>
+		<div class="rtv-mid" id="rtvm-chart1">
+			<div class="rtv-middiv">
+				<div class="rtvmi-config">
+					<div id="rtvmc-1">
+						<span>图表类型:</span>
+						<select class="rtvmc-selectcla" name="rtvmc-select_name" id="rtvmc-select_name">
+							<option value="column">柱状图(竖直)</option>
+					        <option value="bar">柱状图(水平)</option>
+					        <option value="line">折线图</option>
+					        <option value="spline">曲线图</option>
+					        <option value="area">面积图</option>
+					        <!-- <option value="pie">饼图</option> -->
+					        <option value="scatter">散点图</option>
+					        <option value="polar">雷达图</option>
+					        <option value="pyramid">金字塔图</option>
+						</select>
+					</div>
+					<span class="rtvmc-tit">值字段:</span>
+					<ul id="rtvmc-ul"></ul>
+					<span class="rtvmc-xbztit">X轴标注字段:</span>
+					<ul id="rtvmc-xbz"></ul>
+				</div>
+			</div>
+			<div class="rtv-ocbtn">
+				<input type="button" id="rtv-cancelchart1" value="取消" class="rtv-confirm">
+				<input type="button" id="rtv-nextchart" value="确定" class="rtv-confirm">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="rtv-chartshow">
+	<div id="rtv-closechart"></div>
+	<div id="rtvcs-inner"></div>
+</div>
+<div class="rtv-mtrelate">
+	<div class="rtv-content">
+		<div class="rtv-titlediv">
+			<div id="rtvc-lyrtitle" class="rtv-titlebtn">关联图层</div>
+		</div>
+		<div class="rtv-mid">
+			<div class="rtv-middiv">
+				<div class="rtv-relatediv tb2lyr" >
+					<span>表格名称:</span><br>
+					<input type="text" id="rtvmt-tninpt" value="我的表格">
+
+					<span class="rtv-trlspan">表格关联字段:</span><br>
+					<select id="rtvmt-zdinpt"></select>
+				</div>
+				<div class="rtv-rtmd"></div>
+				<div class="rtv-relatediv lyr2tb">
+					<span>属性表格名称:</span><br>
+					<select id="rtvmt-lyrattrna"></select>
+
+					<span class="rtv-lrlspan">选择与表格数据关联的字段:</span><br>
+					<select id="rtvmt-zdlyrattr"></select>
+				</div>
+			</div>
+			<div class="rtv-ocbtn">
+				<input type="button" id="rtv-cancelrelate" value="取消" class="rtv-confirm">
+				<input type="button" id="rtv-okrelate" value="保存" class="rtv-confirm">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="rtv-upnewtab">
+	<div class="rtv-content">
+		<div class="rtv-titlediv">
+			<div id="rtv-upnewtb" class="rtv-titlebtn">导入表格</div>
+		</div>
+		<div class="rtv-mid">
+			<div class="rtv-middiv">
+				
+				<div class="rtv-inputfile">
+					<span id="rtv-uploadnewfile">上传csv表格:</span>
+					<input type="text" id="rtv-filepath" placeholder="请上传要导入的CSV表">
+					<input type="file" id="rtv-filebtn" onchange="document.getElementById('rtv-filepath').value=this.value;" multiple="multiple">
+					<input type="button" id="rtv-liulan" value="浏览">
+				</div>
+
+				<div class="rtv-newtbname">
+					<div id="rtvnew-title">表格名称:</div>
+					<input type="text" id="rtvnew-tbnamept" placeholder="输入表格名称">
+				</div>
+			</div>
+			<div class="rtv-ocbtn">
+				<input type="button" id="rtv-cancelup" value="取消" class="rtv-confirm">
+				<input type="button" id="rtv-okup" value="确定" class="rtv-confirm">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="rtv-addexsittb">
+	<div class="rtv-content">
+		<div class="rtv-titlediv">
+			<div id="rtvadd-mytb" class="rtv-titlebtn">我的表格</div>
+<!-- 分享的表暂时注释掉，以后做的时候还原 -->
+			<!-- <div id="rtvadd-sharetb" class="rtv-titlebtn">分享的表格</div> -->
+		</div>
+		<div class="rtv-mid">
+			<div class="rtv-middiv">
+				<select id="rtvadd-mytbssel" multiple="true"></select>
+				<div class="rtvadd-btndiv">
+					<input type="button" value="添加>>" id="rtvadd-right">
+					<input type="button" value="删除<<" id="rtvadd-left">	
+				</div>
+				<select id="rtvadd-myseledtb" multiple="true"></select>
+			</div>
+			<div class="rtv-ocbtn">
+				<input type="button" id="rtv-canceladdmy" value="取消" class="rtv-confirm">
+				<input type="button" id="rtv-okaddmy" value="确定" class="rtv-confirm">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="rtv-saveas">
+	<div class="rtv-content">
+		<div class="rtv-titlediv">
+			<div id="rtvadd-sveasmytit" class="rtv-titlebtn">表格另存</div>
+		</div>
+		<div class="rtv-mid">
+			<div class="rtv-middiv">
+				<div class="rtv-saveasnewtb">
+					<div class="rtvsaveas-title">表格名称:</div>
+					<input type="text" id="rtvsave-tbnamept" value="我的表格1">
+				</div>
+			</div>
+			<div class="rtv-ocbtn">
+				<input type="button" id="rtv-cancelsaveas" value="取消" class="rtv-confirm">
+				<input type="button" id="rtv-oksaveas" value="确定" class="rtv-confirm">
+			</div>
+		</div>
+	</div>
+</div>

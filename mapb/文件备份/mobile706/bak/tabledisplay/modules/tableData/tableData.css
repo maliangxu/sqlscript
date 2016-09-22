@@ -1,0 +1,15 @@
+#graphAndTable_caption{position: relative; border-left: 3px solid #448ED8; margin: 10px; 
+	font-family: 'Microsoft Yahei';	font-size: 15px; padding-left: 7px; color: #448ED8; background-color: #fff;}
+#graphAndTable_table_caption{position: relative;width: 100%;text-align: center;height: auto; 
+	margin: 0px auto; background-color: #F3F3F3;vertical-align: middle;}
+.graphAndTable_table_arrowLeft{position: absolute; vertical-align: middle;left: 10px;height: 16px; 
+	width: 16px;}
+.graphAndTable_table_arrowRight{position: absolute; vertical-align: middle; right: 10px;height: 16px;
+	idth: 16px;}
+#graphAndTable_table_caption span{position: relative; font-size: 12px; font-family: 'Arial';
+color: #F09932;
+				background-color: #F3F3F3;}
+hr {height: 1px;border: none;border-top: 1px solid #CCCCCC;}
+#graphAndTable_table_tbody{position: relative;text-align: center; margin: 10px; background-color: #F3F3F3;
+					border: 1px solid #999999;}
+#graphAndTable_table_tbody img{height: 100%; width: 100%;}
